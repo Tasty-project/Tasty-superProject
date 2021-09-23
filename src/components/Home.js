@@ -23,7 +23,7 @@ class Home extends Component {
         return (
             <section style={{ display: "flex", flexWrap: "wrap" }}>
                 {this.state.dataIsReady && this.state.data.categories.map(elt =>
-                    <Link to="/category/">
+                    <Link to={`/${elt.strCategory}`}>
                         <div key={elt.idCategory}>
                             <h1>{elt.strCategory}</h1>
                             <img src={elt.strCategoryThumb} alt=""></img>

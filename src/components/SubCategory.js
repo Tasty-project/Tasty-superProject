@@ -15,21 +15,24 @@ class SubCategory extends Component {
             .then(json => this.setState({ data: json }, () => {
                 this.setState({ dataIsReady: true })
                 console.log(this.props.match.params.strCategory)
+                console.log(this.state.data.meals)
             }))
     }
 
     render() {
         return (
-            <section style={{ display: "flex", flexWrap: "wrap" }}>
-                {this.state.dataIsReady && this.state.data.map(elt =>
+           <div>
+               {this.state.dataIsReady && this.state.data.meals.map(elt => 
+
                     <div>
-                        <h2> {elt.strMeal} </h2>
-                        <img src={elt.strMealThumb}> </img>
-
+                        <h2>{elt.strMealThumb}</h2>
                     </div>
-                )}
+               
 
-            </section>
+                
+
+               )}
+           </div>
         );
     }
 }
