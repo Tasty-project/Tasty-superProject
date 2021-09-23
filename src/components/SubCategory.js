@@ -5,7 +5,6 @@ class SubCategory extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            dataIsReady: false,
         }
     }
 
@@ -14,21 +13,16 @@ class SubCategory extends Component {
             .then(response => response.json())
             .then(json => this.setState({ data: json }, () => {
                 this.setState({ dataIsReady: true })
-                console.log(this.props.match.params.strCategory)
             }))
+        console.log(this.props.match.params.strCategory)
     }
 
     render() {
+        console.log(this.state.data)
+        console.log(this.state.dataIsReady)
         return (
             <section style={{ display: "flex", flexWrap: "wrap" }}>
-                {this.state.dataIsReady && this.state.data.map(elt =>
-                    <div>
-                        <h2> {elt.strMeal} </h2>
-                        <img src={elt.strMealThumb}> </img>
-
-                    </div>
-                )}
-
+                123
             </section>
         );
     }
