@@ -26,7 +26,7 @@ class Home extends Component {
                 <h2 className="Home__Headline">Or go through our categories.</h2>
                 <section className="Home__Section">
                     {this.state.dataIsReady && this.state.data.categories.map(elt =>
-                        <Link key={elt.strCategory} className="Home__Link" to={`/${elt.strCategory}`}>
+                        <Link className="Home__Link" to={`/${elt.strCategory}`} key={elt.idCategory}>
                             <div key={elt.idCategory}>
                                 <h1 className="Home__Title">{elt.strCategory}</h1>
                                 <img className="Home__Image" src={elt.strCategoryThumb} alt=""></img>
