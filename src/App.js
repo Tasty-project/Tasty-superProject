@@ -21,8 +21,6 @@ const App = () => {
         </Route>
 
         <Route path="/:strCategory" component={SubCategory}>
-          <SubCategory />
-
         </Route>
 
       </Switch>
