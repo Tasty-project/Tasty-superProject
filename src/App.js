@@ -15,10 +15,15 @@ const App = () => {
 
       <Nav />
 
+<<<<<<< HEAD
       <Switch>
 
         <Route path="/" exact component={Category} />
         <Route path="/:strCategory" component={SubCategory} />
+=======
+        <Route path="/:strCategory" component={SubCategory}>
+        </Route>
+>>>>>>> fe189c9aad50eb3fe56f874c55d48829029714b0
 
       </Switch>
     </Router>
