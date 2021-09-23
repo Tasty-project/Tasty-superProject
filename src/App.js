@@ -1,6 +1,7 @@
 import './App.css';
 import Home from './components/Home';
 import Nav from './components/Nav';
+import SubCategory from './components/SubCategory';
 import {
   BrowserRouter as Router,
   Switch,
@@ -15,8 +16,13 @@ const App = () => {
       <Nav />
       <Switch>
 
-        <Route path="/">
+        <Route path="/" exact>
           <Home />
+        </Route>
+
+        <Route path="/:strCategory" component={SubCategory}>
+          <SubCategory />
+
         </Route>
 
       </Switch>
