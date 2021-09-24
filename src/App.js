@@ -17,13 +17,12 @@ const App = () => {
       <Nav />
 
       <Switch>
-
         <Route path="/" exact component={Category} />
         <Route path="/:strCategory" component={SubCategory} />
-
       </Switch>
 
       <SocialMedia />
+
     </Router>
   );
 }
