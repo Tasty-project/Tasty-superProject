@@ -1,63 +1,64 @@
 .Item__Section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: "5% 20%";
-    
-   
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: "5% 20%";
 }
 
 .Item__flex {
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-between;
-    margin-right: 10px;
-    margin-top: 20px;
-    padding: 25px;
-    border-radius: 15px;
-    background-color: #e1fcf4;
-    color: #210718;
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: #e1fcf4;
+  color: #210718;
 }
 
 .Item__img {
-    width: calc(100% - 10px);
-    border-radius: 15px;
-    margin-bottom: 10px;
+  width: calc(100% - 10px);
+  height: 90vh;
+  border-radius: 15px;
+  margin-bottom: 10px;
 }
 
-.Item__leftside {
-    color: #210718;
-    width: 50%;
-    text-align: right;
-    margin-right: 5px;
-   
+.Item__leftSide {
+  color: #210718;
+  width: 40vw;
+  margin-right: 5px;
+}
+.Item__leftSide p {
+  line-height: 30px;
 }
 
 .Item__rightSide {
-    color: #210718;
-    width: 50%;
-    text-align: right;
-    margin-right: 5px;
-    font-weight: bold;
+  color: #210718;
+  width: 10vw;
+  text-align: left;
+  margin-right: 5px;
+  font-weight: bold;
 }
 
 .Item__color {
-    color: #210718;
-    padding: 5px;
+  color: #210718;
+  padding: 5px;
 }
 
 .youtube {
-    border: 1px solid #210718;
-    background: #210718;
-    padding: 6px 15px;
-    border-radius: 5px;
-    color: #e1fcf4;
-    text-decoration: none;
-    /* margin-top: 5%; */
+  border: 1px solid #210718;
+  background: #210718;
+  padding: 6px 15px;
+  border-radius: 5px;
+  color: #e1fcf4;
+  text-decoration: none;
+  transition: 0.5s;
+  /* margin-top: 5%; */
 }
 
-/* .youtube:hover {
-    transition: transform 0.2s;
-    max-width: 50vw;  
-    transform: scale(1.05);
-} */
+.youtube:hover {
+  background-color: #fff;
+  color: #210718;
+  box-shadow: 2px 2px 2px 3px #210718;
+}

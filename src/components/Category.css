@@ -43,6 +43,7 @@
 }
 
 .Home__Title {
+  height: 30vh;
   font-family: "Work Sans";
   text-align: center;
   text-transform: uppercase;
@@ -73,14 +74,14 @@
 }
 
 .Home__Image {
-  transition: transform 0.2s;
+  transition: 0.2s;
   display: block;
   margin: 0 auto 10px auto;
-  max-width: 90vw;
+  border-radius: 5px;
 }
 
 .Home__Link:hover .Home__Image {
-  transform: scale(1.15);
+  transform: scale(1.5);
 }
 .random {
   width: 346px;
