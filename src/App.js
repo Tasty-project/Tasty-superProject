@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import SubCategory from './components/SubCategory';
 import SocialMedia from './components/SocialMedia';
 import TastyItem from './components/TastyItem';
+import Random from './components/Random'
 import {
   BrowserRouter as Router,
   Switch,

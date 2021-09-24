@@ -1,86 +1,92 @@
 .Home__Headline {
-    margin-top: 100px;
-    font-size:  40px;
+  margin-top: 100px;
+  font-size: 40px;
 }
 
 @media (max-width: 1150px) {
-    .Home__Headline {
-        font-size: 50px;
-    }
+  .Home__Headline {
+    font-size: 50px;
+  }
 }
 
 @media (max-width: 700px) {
-    .Home__Headline {
-        font-size: 9vw;
-    }
+  .Home__Headline {
+    font-size: 9vw;
+  }
 }
 
-
 .Home__Section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .Home__Link {
-    margin-bottom: 30px;
-    width: calc(33% - 15px);
-    border-radius: 10px;
-    display: block;
-    text-decoration: none;
+  margin-bottom: 30px;
+  width: calc(33% - 15px);
+  border-radius: 10px;
+  display: block;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 1150px) {
-    .Home__Link {
-        width: calc(50% - 15px);
-    }
+  .Home__Link {
+    width: calc(50% - 15px);
+  }
 }
 
 @media only screen and (max-width: 700px) {
-    .Home__Link {
-        width: 100%;
-        margin-bottom: 2.5vw;
-    }
+  .Home__Link {
+    width: 100%;
+    margin-bottom: 2.5vw;
+  }
 }
 
-
 .Home__Title {
-    font-family: "Work Sans";
-    text-align: center;
-    text-transform: uppercase;
-    color: #210718;
-    transition: color 0.2s;
+  font-family: "Work Sans";
+  text-align: center;
+  text-transform: uppercase;
+  color: #210718;
+  transition: color 0.2s;
 }
 
 .Home__Link:nth-child(even) {
-    background-color: #ffedf9;
-    transition: background-color 0.2s;
+  background-color: #ffedf9;
+  transition: background-color 0.2s;
 }
 
 .Home__Link:nth-child(odd) {
-    background-color: #e1fcf4;
-    transition: background-color 0.2s;
+  background-color: #e1fcf4;
+  transition: background-color 0.2s;
 }
 
 .Home__Link:hover {
-    background-color: #210718;
+  background-color: #210718;
 }
 
 .Home__Link:nth-child(even):hover .Home__Title {
-    color: #ffedf9;
+  color: #ffedf9;
 }
 
 .Home__Link:nth-child(odd):hover .Home__Title {
-    color: #e1fcf4;
+  color: #e1fcf4;
 }
 
 .Home__Image {
-    transition: transform 0.2s;
-    display: block;
-    margin: 0 auto 10px auto;
-    max-width: 90vw;
+  transition: transform 0.2s;
+  display: block;
+  margin: 0 auto 10px auto;
+  max-width: 90vw;
 }
 
 .Home__Link:hover .Home__Image {
-    transform: scale(1.15);
+  transform: scale(1.15);
+}
+.random {
+  width: 346px;
+  height: 110px;
+  text-align: center;
+  margin-top: 120px;
+  font-size: 50px;
+  color: #210718;
 }
