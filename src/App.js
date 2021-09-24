@@ -1,4 +1,5 @@
 import './App.css';
+import React, { Component } from 'react';
 import Category from './components/Category';
 import Nav from './components/Nav';
 import SubCategory from './components/SubCategory';
@@ -11,21 +12,24 @@ import {
   Link
 } from "react-router-dom";
 
-const App = () => {
-  return (
-    <Router>
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {}
+  }
 
-      <Nav />
-      <Switch>
-        <Route path="/" exact component={Category} />
-        <Route path="/:strCategory" exact component={SubCategory} />
-        <Route path="/:strCategory/:idMeal" component={TastyItem} />
-      </Switch>
+  render() {
+    return (
+      <Router>
 
-      <SocialMedia />
-
-    </Router>
-  );
+        <Switch>
+          <Route path="/" exact component={Category} />
+          <Route path="/:strCategory" exact component={SubCategory} />
+          <Route path="/:strCategory/:idMeal" component={TastyItem} />
+        </Switch>
+        <SocialMedia />
+      </Router>);
+  }
 }
 
 export default App;

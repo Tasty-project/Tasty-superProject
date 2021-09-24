@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Nav from './Nav';
 import { Link } from 'react-router-dom';
 
 class TastyItem extends Component {
@@ -22,6 +23,7 @@ class TastyItem extends Component {
     render() {
         return (
             <>
+                <Nav component={this.state.data} />
                 {this.state.dataIsReady && this.state.data.meals.map(elt =>
                     <section style={{ padding: "5% 20%" }}>
                         <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between" }}>

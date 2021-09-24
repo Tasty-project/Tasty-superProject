@@ -11,7 +11,9 @@ class Nav extends Component {
         super(props);
         this.state = {}
     }
+
     render() {
+        console.log(this.props.component)
         return (
             <section style={flexy}>
                 <img style={{ width: "10%" }} src="../img/logo.svg"></img>
