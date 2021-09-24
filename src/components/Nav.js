@@ -17,7 +17,6 @@ class Nav extends Component {
                 <Link to="/" style={{ width: "17%" },{textAlign: "center"}}>
                 <img  src="../img/logo.svg"></img>
                 </Link>
-                <h1>Find a recipe, an idea, an inspiration...</h1>
                 <div>
                     <input type="text" placeholder="Type something to search"></input>
                     <input type="button" value="Search"></input>
