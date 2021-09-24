@@ -14,7 +14,7 @@ class Nav extends Component {
     render() {
         return (
             <section style={flexy}>
-                <img style={{ width: "10%" }} src="../img/logo.svg"></img>
+                <img style={{ width: "16%" }} src="../img/logo.svg"></img>
                 <h1>Find a recipe, an idea, an inspiration...</h1>
                 <div>
                     <input type="text" placeholder="Type something to search"></input>
