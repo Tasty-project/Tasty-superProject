@@ -21,7 +21,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-
+        <Nav/>
         <Switch>
           <Route path="/" exact component={Category} />
           <Route path="/random" component={Random}/>
