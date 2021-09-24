@@ -58,7 +58,7 @@
 }
 
 .Home__Link:nth-child(odd) {
-    background-color: #dafcd4;
+    background-color: #e1fcf4;
     transition: background-color 0.2s;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .Home__Link:nth-child(odd):hover .Home__Title {
-    color: #dafcd4;
+    color: #e1fcf4;
 }
 
 .Home__Image {
