@@ -3,7 +3,7 @@ import './TastyItem.css'
 class Random extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = {}
     }
     componentDidMount() {
         fetch('https://www.themealdb.com/api/json/v1/1/random.php')
@@ -11,11 +11,11 @@ class Random extends Component {
             .then(json => this.setState({ data: json }, () => {
                 console.log("Data is Raedy")
                 this.setState({ dataIsReady: true })
-                console.log('the random arr',this.state.data)
+                console.log('the random arr', this.state.data)
             }))
     }
-    render() { 
-        return ( 
+    render() {
+        return (
             <>
                 {this.state.dataIsReady && this.state.data.meals.map(elt =>
                     <section className="Item__section">
@@ -59,5 +59,5 @@ class Random extends Component {
         );
     }
 }
- 
+
 export default Random;
