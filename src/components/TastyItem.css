@@ -27,7 +27,7 @@
 
 .Item__leftside {
     color: #210718;
-    width: 60%;
+    width: 50%;
     text-align: right;
     margin-right: 5px;
    
@@ -35,7 +35,7 @@
 
 .Item__rightSide {
     color: #210718;
-    width: 30%;
+    width: 50%;
     text-align: right;
     margin-right: 5px;
     font-weight: bold;
@@ -43,7 +43,7 @@
 
 .Item__color {
     color: #210718;
-    padding: 10px;
+    padding: 5px;
 }
 
 .youtube {
@@ -56,8 +56,8 @@
     /* margin-top: 5%; */
 }
 
-.youtube:hover {
+/* .youtube:hover {
     transition: transform 0.2s;
     max-width: 50vw;  
-    /* transform: scale(1.05); */
-}
+    transform: scale(1.05);
+} */
