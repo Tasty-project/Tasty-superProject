@@ -1,3 +1,5 @@
+import './SocialMedia.css';
+
 const SocialMedia = () => {
     return (
         <footer style={{ display: "flex", justifyContent: "center" }}>
