@@ -25,9 +25,9 @@
     margin-bottom: 10px;
 }
 
-.Item__leftside {
+.Item__leftSide {
     color: #210718;
-    width: 50%;
+    width: 60%;
     text-align: right;
     margin-right: 5px;
    
@@ -35,7 +35,7 @@
 
 .Item__rightSide {
     color: #210718;
-    width: 50%;
+    width: 40%;
     text-align: right;
     margin-right: 5px;
     font-weight: bold;

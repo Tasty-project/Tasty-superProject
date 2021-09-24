@@ -25,6 +25,7 @@ class App extends Component {
 
         <Switch>
           <Route path="/" exact component={Category} />
+          <Route path="/random" component={Random} />
           <Route path="/:strCategory" exact component={SubCategory} />
           <Route path="/:strCategory/:idMeal" component={TastyItem} />
         </Switch>
