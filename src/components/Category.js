@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Category.css';
 
+
 class Home extends Component {
     constructor(props) {
         super(props);
@@ -16,7 +17,7 @@ class Home extends Component {
             .then(json => this.setState({ data: json }, () => {
                 console.log("Data is Raedy")
                 this.setState({ dataIsReady: true })
-                console.log(this.state.data)
+                console.log('cata',this.state.data)
             }))
     }
 
@@ -32,7 +33,11 @@ class Home extends Component {
                                 <img className="Home__Image" src={elt.strCategoryThumb} alt=""></img>
                             </div>
                         </Link>
+                       
                     )}
+                     <Link to="/random">
+                     <h1>Random</h1>
+                     </Link>
                 </section>
             </>
         );
