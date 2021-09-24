@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Nav from './Nav';
 import './TastyItem.css';
 
 class TastyItem extends Component {
@@ -23,7 +22,6 @@ class TastyItem extends Component {
     render() {
         return (
             <>
-                <Nav component={this.state.data} />
                 {this.state.dataIsReady && this.state.data.meals.map(elt =>
                     <section className="Item__section">
                         <div className="Item__flex">

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Nav from './Nav';
 import './Category.css';
 
 class Category extends Component {
@@ -23,7 +22,6 @@ class Category extends Component {
     render() {
         return (
             <>
-                <Nav component={this.state.data} />
                 <h2 className="Home__Headline">Or go through our categories.</h2>
                 <section className="Home__Section">
                     {this.state.dataIsReady && this.state.data.categories.map(elt =>
@@ -37,7 +35,7 @@ class Category extends Component {
                     )}
                     <Link to="/random" className="Home__Link" >
                         <div>
-                        <h1 className="random">Random</h1>
+                            <h1 className="random">Random</h1>
                         </div>
                     </Link>
                 </section>
