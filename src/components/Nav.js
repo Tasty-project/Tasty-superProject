@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {Link} from 'react-router-dom'
 const flexy = {
     display: "flex",
     flexDirection: "column",
@@ -16,8 +16,9 @@ class Nav extends Component {
         console.log(this.props.component)
         return (
             <section style={flexy}>
-                <img style={{ width: "16%" }} src="../img/logo.svg"></img>
-                <h1>Find a recipe, an idea, an inspiration...</h1>
+                <Link to="/" style={{ width: "17%" },{textAlign: "center"}}>
+                <img  src="../img/logo.svg"></img>
+                </Link>
                 <div>
                     <input type="text" placeholder="Type something to search"></input>
                     <input type="button" value="Search"></input>

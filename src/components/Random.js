@@ -1,6 +1,5 @@
-import { Component } from 'react';
-import './TastyItem.css';
-
+import {Component} from 'react';
+import './TastyItem.css'
 class Random extends Component {
     constructor(props) {
         super(props);
@@ -21,15 +20,15 @@ class Random extends Component {
                 {this.state.dataIsReady && this.state.data.meals.map(elt =>
                     <section className="Item__section">
                         <div className="Item__flex">
-                            <img className="Item__img" src={elt.strMealThumb}></img>
+                            <img className="Item__img"></img>
                         </div>
                         <div className="Item__flex">
                             <div className="Item__leftSide">
-                                <h1 className="Item__color">{elt.strMeal}</h1>
-                                <p className="Item__color">{elt.strInstructions}</p>
+                                <h1  className="Item__color">{elt.strMeal}</h1>
+                                <p style={{ color: "#fff" }}>{elt.strInstructions}</p>
                             </div>
-                            <div className="Item__rightSide">
-                                <h1 className="Item__color">Ingredients</h1>
+                            <div className="Item__rightSide" >
+                                <h1 className="Item__color" >Ingredients</h1>
                                 <p>{elt.strMeasure1} {elt.strIngredient1}</p>
                                 <p>{elt.strMeasure2} {elt.strIngredient2}</p>
                                 <p>{elt.strMeasure3} {elt.strIngredient3}</p>
