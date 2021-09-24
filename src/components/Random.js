@@ -20,12 +20,12 @@ class Random extends Component {
                 {this.state.dataIsReady && this.state.data.meals.map(elt =>
                     <section className="Item__section">
                         <div className="Item__flex">
-                            <img className="Item__img"></img>
+                            <img className="Item__img" src={elt.strMealThumb}></img>
                         </div>
                         <div className="Item__flex">
                             <div className="Item__leftSide">
                                 <h1  className="Item__color">{elt.strMeal}</h1>
-                                <p style={{ color: "#fff" }}>{elt.strInstructions}</p>
+                                <p>{elt.strInstructions}</p>
                             </div>
                             <div className="Item__rightSide" >
                                 <h1 className="Item__color" >Ingredients</h1>
