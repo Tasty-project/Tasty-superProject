@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Nav from './Nav';
-import { Link } from 'react-router-dom';
 import './TastyItem.css';
 
 class TastyItem extends Component {
@@ -28,7 +27,7 @@ class TastyItem extends Component {
                 {this.state.dataIsReady && this.state.data.meals.map(elt =>
                     <section className="Item__section">
                         <div className="Item__flex">
-                            <img className="Item__img" src={elt.strMealThumb}></img>
+                            <img className="Item__img" src={elt.strMealThumb} alt=""></img>
                         </div>
                         <div className="Item__flex">
                             <div className="Item__leftSide">
