@@ -34,8 +34,10 @@ class Category extends Component {
                         </Link>
 
                     )}
-                    <Link to="/random">
-                        <h1>Random</h1>
+                    <Link to="/random" className="Home__Link" >
+                        <div>
+                        <h1 className="random">Random</h1>
+                        </div>
                     </Link>
                 </section>
             </>
