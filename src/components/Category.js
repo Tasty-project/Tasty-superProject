@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import './Category.css';
 
 class Home extends Component {
     constructor(props) {
@@ -21,16 +22,19 @@ class Home extends Component {
 
     render() {
         return (
-            <section style={{ display: "flex", flexWrap: "wrap" }}>
-                {this.state.dataIsReady && this.state.data.categories.map(elt =>
-                    <Link to={`/${elt.strCategory}`} key={elt.idCategory}>
-                        <div>
-                            <h1>{elt.strCategory}</h1>
-                            <img src={elt.strCategoryThumb} alt=""></img>
-                        </div>
-                    </Link>
-                )}
-            </section>
+            <>
+                <h2 className="Home__Headline">Or go through our categories.</h2>
+                <section className="Home__Section">
+                    {this.state.dataIsReady && this.state.data.categories.map(elt =>
+                        <Link className="Home__Link" to={`/${elt.strCategory}`} key={elt.idCategory}>
+                            <div key={elt.idCategory}>
+                                <h1 className="Home__Title">{elt.strCategory}</h1>
+                                <img className="Home__Image" src={elt.strCategoryThumb} alt=""></img>
+                            </div>
+                        </Link>
+                    )}
+                </section>
+            </>
         );
     }
 }
