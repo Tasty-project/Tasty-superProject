@@ -3,6 +3,7 @@ import Category from './components/Category';
 import Nav from './components/Nav';
 import SubCategory from './components/SubCategory';
 import SocialMedia from './components/SocialMedia';
+import TastyItem from './components/TastyItem';
 import {
   BrowserRouter as Router,
   Switch,
@@ -18,7 +19,8 @@ const App = () => {
 
       <Switch>
         <Route path="/" exact component={Category} />
-        <Route path="/:strCategory" component={SubCategory} />
+        <Route path="/:strCategory" exact component={SubCategory} />
+        <Route path="/:strCategory/:idMeal" component={TastyItem} />
       </Switch>
 
       <SocialMedia />

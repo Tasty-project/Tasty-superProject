@@ -23,7 +23,7 @@ class SubCategory extends Component {
         return (
             <section style={{ display: "flex", flexWrap: "wrap" }}>
                 {this.state.dataIsReady && this.state.data.meals.map((elt, i) =>
-                    <Link key={i} to="">
+                    <Link key={i} to={`/${this.props.match.params.strCategory}/${elt.idMeal}`}>
                         <div>
                             <h1>{elt.strMeal}</h1>
                             <img style={{ width: "30%" }} src={elt.strMealThumb} alt=""></img>
