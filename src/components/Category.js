@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Nav from './Nav';
 import './Category.css';
 
 class Category extends Component {
@@ -16,13 +17,13 @@ class Category extends Component {
             .then(json => this.setState({ data: json }, () => {
                 console.log("Data is Raedy")
                 this.setState({ dataIsReady: true })
-                console.log('cata', this.state.data)
             }))
     }
 
     render() {
         return (
             <>
+                <Nav component={this.state.data} />
                 <h2 className="Home__Headline">Or go through our categories.</h2>
                 <section className="Home__Section">
                     {this.state.dataIsReady && this.state.data.categories.map(elt =>

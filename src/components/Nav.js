@@ -11,7 +11,9 @@ class Nav extends Component {
         super(props);
         this.state = {}
     }
+
     render() {
+        console.log(this.props.component)
         return (
             <section style={flexy}>
                 <Link to="/" style={{ width: "17%" },{textAlign: "center"}}>
