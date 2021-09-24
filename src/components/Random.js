@@ -1,8 +1,10 @@
-import {Component} from 'react';
+import { Component } from 'react';
+import './TastyItem.css';
+
 class Random extends Component {
     constructor(props) {
         super(props);
-        this.state = {  }
+        this.state = {}
     }
     componentDidMount() {
         fetch('https://www.themealdb.com/api/json/v1/1/random.php')
@@ -10,24 +12,24 @@ class Random extends Component {
             .then(json => this.setState({ data: json }, () => {
                 console.log("Data is Raedy")
                 this.setState({ dataIsReady: true })
-                console.log('the random arr',this.state.data)
+                console.log('the random arr', this.state.data)
             }))
     }
-    render() { 
-        return ( 
+    render() {
+        return (
             <>
                 {this.state.dataIsReady && this.state.data.meals.map(elt =>
-                    <section style={{ padding: "5% 20%" }}>
-                        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between" }}>
-                            <img style={{ width: "100%" }} src={elt.strMealThumb}></img>
+                    <section className="Item__section">
+                        <div className="Item__flex">
+                            <img className="Item__img" src={elt.strMealThumb}></img>
                         </div>
-                        <div style={{ display: "flex", justifyContent: "space-between" }}>
-                            <div style={{ width: "50%" }}>
-                                <h1>{elt.strMeal}</h1>
-                                <p style={{ color: "#fff" }}>{elt.strInstructions}</p>
+                        <div className="Item__flex">
+                            <div className="Item__leftSide">
+                                <h1 className="Item__color">{elt.strMeal}</h1>
+                                <p className="Item__color">{elt.strInstructions}</p>
                             </div>
-                            <div style={{ color: "#fff", width: "50%", textAlign: "right" }}>
-                                <h1>Ingredients</h1>
+                            <div className="Item__rightSide">
+                                <h1 className="Item__color">Ingredients</h1>
                                 <p>{elt.strMeasure1} {elt.strIngredient1}</p>
                                 <p>{elt.strMeasure2} {elt.strIngredient2}</p>
                                 <p>{elt.strMeasure3} {elt.strIngredient3}</p>
@@ -48,7 +50,7 @@ class Random extends Component {
                                 <p>{elt.strMeasure18} {elt.strIngredient18}</p>
                                 <p>{elt.strMeasure19} {elt.strIngredient19}</p>
                                 <p>{elt.strMeasure20} {elt.strIngredient20}</p>
-                                <a href={elt.strYoutube}>YouTube</a>
+                                <a className="youtube" href={elt.strYoutube}>YouTube</a>
                             </div>
                         </div>
                     </section>
@@ -58,5 +60,5 @@ class Random extends Component {
         );
     }
 }
- 
+
 export default Random;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './TastyItem.css'
+import './TastyItem.css';
 
 class TastyItem extends Component {
     constructor(props) {
@@ -55,7 +55,7 @@ class TastyItem extends Component {
                                 <p>{elt.strMeasure18} {elt.strIngredient18}</p>
                                 <p>{elt.strMeasure19} {elt.strIngredient19}</p>
                                 <p>{elt.strMeasure20} {elt.strIngredient20}</p>
-                                <a className="youtube" href={elt.strYoutube}>Watch on YouTube</a>
+                                <a className="youtube" href={elt.strYoutube}> YouTube</a>
                             </div>
                         </div>
                     </section>
