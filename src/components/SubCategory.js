@@ -15,7 +15,8 @@ class SubCategory extends Component {
         super(props);
         this.state = {
             searchItem: [],
-            checkSearch: false
+            checkSearch: false,
+            myInput: ""
         }
     }
 
@@ -29,19 +30,8 @@ class SubCategory extends Component {
     }
 
     render() {
-        console.log(this.state.searchItem)
-        console.log(this.state.checkSearch)
         return (
             <>
-                {this.state.dataIsReady ? <section style={flexy}>
-                    <Link to="/" style={{ width: "17%", textAlign: "center" }}>
-                        <img src="../img/logo.svg" alt=""></img>
-                    </Link>
-                    <div>
-                        <input id="valueSearch" type="text" placeholder="Type something to search"></input>
-                        <input type="button" value="Search" onClick={this.search}></input>
-                    </div>
-                </section > : null}
                 <h2 className="Home__Headline"> Everything {this.props.match.params.strCategory} </h2>
                 <section className="Home__Section">
                     {this.state.dataIsReady && this.state.data.meals.map((elt, i) =>
