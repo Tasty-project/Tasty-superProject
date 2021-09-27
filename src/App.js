@@ -28,7 +28,6 @@ class App extends Component {
           <Route path="/search/:idMeal" exact component={TastyItem} />
           <Route path="/:strCategory/:idMeal" component={TastyItem} />
         </Switch>
-        <SocialMedia />
       </Router>);
   }
 }

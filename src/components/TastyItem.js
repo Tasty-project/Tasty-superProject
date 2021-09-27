@@ -35,7 +35,6 @@ class TastyItem extends Component {
                                 <ul>
                                     {elt.strInstructions.split('.').map(elt => <li>{elt + "."}</li>)}
                                 </ul>
-
                             </div>
                             <div className="Item__rightSide">
                                 <h1 className="Item__color"  >Ingredients</h1>

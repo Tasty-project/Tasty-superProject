@@ -33,7 +33,6 @@ class SearchItems extends Component {
                                         <img className="Home__Image" style={{ width: "35%" }} src={elt.strMealThumb} alt=""></img>
                                     </div>
                                 </Link>
-
                             ),
                         }, () => this.setState({ checkSearch: true }));
                     } else {
@@ -53,9 +52,8 @@ class SearchItems extends Component {
                         <h1 className="Home__Title">{elt.strCategory}</h1>
                         <img className="Home__Image" src={elt.strCategoryThumb} alt=""></img>
                     </div>
-                </Link>
+                </Link>)
 
-            )
         return (
             <>
                 <section >
@@ -66,7 +64,8 @@ class SearchItems extends Component {
                         <input id="valueSearch" type="text" placeholder="Type something to search..." value={this.state.myInput} onChange={this.handleMyInput}></input>
                     </div>
                 </section >
-                {!this.state.checkSearch ? test : this.state.test2}
+                {!this.state.checkSearch ? <section className="Flexy_Section"><div className="Home__Section">test</div></section> : <section className="Flexy_Section">
+                    <div className="Home__Section">{this.state.test2}</div></section>}
             </>
         );
     }
