@@ -48,6 +48,10 @@
   text-transform: uppercase;
   color: #210718;
   transition: color 0.2s;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .Home__Link:nth-child(even) {

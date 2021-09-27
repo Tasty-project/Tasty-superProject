@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import './Search.css';
 
 const flexy = {
     display: "flex",
@@ -26,7 +27,7 @@ class SearchItems extends Component {
                     if (json.meals) {
                         this.setState({
                             test2: json.meals.map((elt, i) =>
-                                <Link className="Home__Link" key={i} to={`/#/${elt.idMeal}`}>
+                                <Link className="Home__Link" key={i} to={`/search/${elt.idMeal}`}>
                                     <div>
                                         <h1 className="Home__Title">{elt.strMeal}</h1>
                                         <img className="Home__Image" style={{ width: "35%" }} src={elt.strMealThumb} alt=""></img>
@@ -57,12 +58,12 @@ class SearchItems extends Component {
             )
         return (
             <>
-                <section style={flexy}>
-                    <Link to="/" style={{ width: "17%", textAlign: "center" }}>
+                <section >
+                    <Link to="/" className="logo">
                         <img src="../img/logo.svg" alt=""></img>
                     </Link>
-                    <div>
-                        <input id="valueSearch" type="text" placeholder="Type something to search" value={this.state.myInput} onChange={this.handleMyInput}></input>
+                    <div className="search__div" >
+                        <input id="valueSearch" type="text" placeholder="Type something to search..." value={this.state.myInput} onChange={this.handleMyInput}></input>
                     </div>
                 </section >
                 {!this.state.checkSearch ? test : this.state.test2}

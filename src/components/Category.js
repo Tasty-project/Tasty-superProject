@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import SearchItems from './SearchItems';
 import './Category.css';
 
 class Category extends Component {
@@ -34,6 +33,7 @@ class Category extends Component {
                                 <img className="Home__Image" src={elt.strCategoryThumb} alt=""></img>
                             </div>
                         </Link>)}
+                    <Link to="/random">Random</Link>
                 </section>
             </>
         );

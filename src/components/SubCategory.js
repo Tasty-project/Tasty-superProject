@@ -3,12 +3,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Category.css';
 import '../App.css';
-
-const flexy = {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-}
+import SearchItems from './SearchItems';
 
 class SubCategory extends Component {
     constructor(props) {
@@ -32,6 +27,7 @@ class SubCategory extends Component {
     render() {
         return (
             <>
+                <SearchItems />
                 <h2 className="Home__Headline"> Everything {this.props.match.params.strCategory} </h2>
                 <section className="Home__Section">
                     {this.state.dataIsReady && this.state.data.meals.map((elt, i) =>

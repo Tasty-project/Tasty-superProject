@@ -21,14 +21,11 @@ class App extends Component {
   render() {
     return (
       <Router>
-
-        <SearchItems />
-
         <Switch>
           <Route path="/" exact component={Category} />
-          <Route path="/searchItems" component={SearchItems} />
           <Route path="/random" component={Random} />
           <Route path="/:strCategory" exact component={SubCategory} />
+          <Route path="/search/:idMeal" exact component={TastyItem} />
           <Route path="/:strCategory/:idMeal" component={TastyItem} />
         </Switch>
         <SocialMedia />
