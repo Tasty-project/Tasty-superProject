@@ -3,12 +3,6 @@ import { Link } from 'react-router-dom';
 import SearchItems from './SearchItems';
 import './Category.css';
 
-const flexy = {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-}
-
 class Category extends Component {
     constructor(props) {
         super(props);
@@ -31,23 +25,12 @@ class Category extends Component {
     render() {
         return (
             <>
-                {this.state.dataIsReady ? <section style={flexy}>
-                    <Link to="/" style={{ width: "17%", textAlign: "center" }}>
-                        <img src="../img/logo.svg" alt=""></img>
-                    </Link>
-                    <div>
-                        <input id="valueSearch" type="text" placeholder="Type something to search" value={this.state.myInput} onChange={this.handleMyInput}></input>
-                        <input type="button" value="Search" onClick={this.search}></input>
-                    </div>
-                </section > : null}
-                {!this.state.checkSearch ? test : this.state.test2}
-                <Link to="/random">random</Link>
-                <h2 className="Home__Headline">Or go through our categories</h2>
-                <section className="Home__Section">
+                <h2 className="HomeHeadline">Or go through our categories</h2>
+                <section className="HomeSection">
                     {this.state.dataIsReady && this.state.data.categories.map(elt =>
-                        <Link className="Home__Link" to={`/${elt.strCategory}`} key={elt.idCategory}>
+                        <Link className="HomeLink" to={`/${elt.strCategory}`} key={elt.idCategory}>
                             <div key={elt.idCategory}>
-                                <h1 className="Home__Title">{elt.strCategory}</h1>
+                                <h1 className="HomeTitle">{elt.strCategory}</h1>
                                 <img className="Home__Image" src={elt.strCategoryThumb} alt=""></img>
                             </div>
                         </Link>)}
