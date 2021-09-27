@@ -35,6 +35,7 @@ class Category extends Component {
                                 <img className="Home__Image" src={elt.strCategoryThumb} alt=""></img>
                             </div>
                         </Link>)}
+                    <Link to="/random">Random</Link>
                 </section>
             </>
         );
