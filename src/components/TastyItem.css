@@ -1,8 +1,6 @@
-.Item__Section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: "5% 20%";
+
+.Item__section li:last-child {
+  display: none;
 }
 
 .Item__flex {
@@ -27,7 +25,7 @@
 .Item__leftSide {
     color: #210718;
     width: 60%;
-    text-align: right;
+    text-align: left;
     margin-right: 5px;
    
 }

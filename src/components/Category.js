@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import SearchItems from './SearchItems';
 import './Category.css';
-
-const flexy = {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-}
+import SearchItems from './SearchItems';
 
 class Category extends Component {
     constructor(props) {
@@ -31,6 +25,7 @@ class Category extends Component {
     render() {
         return (
             <>
+                <SearchItems />
                 <h2 className="Home__Headline">Or go through our categories</h2>
                 <section className="Home__Section">
                     {this.state.dataIsReady && this.state.data.categories.map(elt =>

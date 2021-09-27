@@ -26,7 +26,7 @@ class SearchItems extends Component {
                     if (json.meals) {
                         this.setState({
                             test2: json.meals.map((elt, i) =>
-                                <Link className="Home__Link" key={i} to={`/#/${elt.idMeal}`}>
+                                <Link className="Home__Link" key={i} to={`/search/${elt.idMeal}`}>
                                     <div>
                                         <h1 className="Home__Title">{elt.strMeal}</h1>
                                         <img className="Home__Image" style={{ width: "35%" }} src={elt.strMealThumb} alt=""></img>
