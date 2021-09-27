@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+input {
+    font-family: 'Belleza', sans-serif;
+    width: 210px;
+    padding: 12px;
+    margin: 25px 0;
+    border-radius: 10px;
+    border: 1px solid #e1fcf4;
+    
+}
+
+input:hover {
+    font-family: 'Belleza', sans-serif;
+    padding: 10px;
+    margin: 25px 0 ;
+    border-radius: 10px;
+    border: 1px solid #e1fcf4;
+    box-shadow: 1px 1px 4px 3px #e1fcf4;
+}
+
+@media (max-width: 700px) {
+    input {
+        margin-left: 5%;
+    }
+  }
+
+.search__div {
+    text-align: center;
+    /* margin-left: 10%; */
+}
+
+.logo {
+    margin-left: 40%;
+}
+@media (max-width: 700px) {
+   .logo {
+        margin-left: 30%;
+    }
+  }
