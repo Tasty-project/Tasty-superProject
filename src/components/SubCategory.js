@@ -4,10 +4,18 @@ import { Link } from 'react-router-dom';
 import './Category.css';
 import '../App.css';
 
+const flexy = {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+}
+
 class SubCategory extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            searchItem: [],
+            checkSearch: false
         }
     }
 
@@ -16,15 +24,24 @@ class SubCategory extends Component {
             .then(response => response.json())
             .then(json => this.setState({ data: json }, () => {
                 this.setState({ dataIsReady: true })
+                console.log(this.props.match.params.strCategory)
             }))
     }
 
     render() {
-        console.log(this.props.match.params.strCategory)
-        console.log(this.state.data)
-        console.log(this.state.dataIsReady)
+        console.log(this.state.searchItem)
+        console.log(this.state.checkSearch)
         return (
             <>
+                {this.state.dataIsReady ? <section style={flexy}>
+                    <Link to="/" style={{ width: "17%", textAlign: "center" }}>
+                        <img src="../img/logo.svg" alt=""></img>
+                    </Link>
+                    <div>
+                        <input id="valueSearch" type="text" placeholder="Type something to search"></input>
+                        <input type="button" value="Search" onClick={this.search}></input>
+                    </div>
+                </section > : null}
                 <h2 className="Home__Headline"> Everything {this.props.match.params.strCategory} </h2>
                 <section className="Home__Section">
                     {this.state.dataIsReady && this.state.data.meals.map((elt, i) =>
