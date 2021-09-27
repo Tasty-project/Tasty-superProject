@@ -25,20 +25,19 @@
 }
 
 .Item__leftSide {
-  color: #210718;
-  width: 40vw;
-  margin-right: 5px;
-}
-.Item__leftSide p {
-  line-height: 30px;
+    color: #210718;
+    width: 60%;
+    text-align: right;
+    margin-right: 5px;
+   
 }
 
 .Item__rightSide {
-  color: #210718;
-  width: 10vw;
-  text-align: left;
-  margin-right: 5px;
-  font-weight: bold;
+    color: #210718;
+    width: 40%;
+    text-align: right;
+    margin-right: 5px;
+    font-weight: bold;
 }
 
 .Item__color {

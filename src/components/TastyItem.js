@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Nav from './Nav';
 import './TastyItem.css';
 
 class TastyItem extends Component {
@@ -19,28 +18,10 @@ class TastyItem extends Component {
                 console.log(this.state.data)
             }))
     }
- period =(p)=>{
-     let i=0;
-     let p1 = '';
-     let arr = [];
-        for( i=0 ;i < p.length ; i++){
-            arr.push(p.charAt(i))
-            if (arr[i] === '.'){
-                arr[i] = 
-                console.log('hey there')
-                
-            }
-            
-            p1 += arr[i] 
-              } 
-   
-        return p1
-    }
 
     render() {
         return (
             <>
-                <Nav component={this.state.data} />
                 {this.state.dataIsReady && this.state.data.meals.map(elt =>
                     <section className="Item__section">
                         <div className="Item__flex">
@@ -49,7 +30,8 @@ class TastyItem extends Component {
                         <div className="Item__flex">
                             <div className="Item__leftSide">
                                 <h1 className="Item__color">{elt.strMeal}</h1>
-                                 { this.period(elt.strInstructions)}
+                                 <p>{elt.strInstructions}</p>
+                                
                             </div>
                             <div className="Item__rightSide">
                                 <h1 className="Item__color"  >Ingredients</h1>

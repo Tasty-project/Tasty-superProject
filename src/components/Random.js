@@ -1,4 +1,4 @@
-import {Component} from 'react';
+import { Component } from 'react';
 import './TastyItem.css'
 class Random extends Component {
     constructor(props) {
@@ -20,11 +20,11 @@ class Random extends Component {
                 {this.state.dataIsReady && this.state.data.meals.map(elt =>
                     <section className="Item__section">
                         <div className="Item__flex">
-                            <img className="Item__img" src={elt.strMealThumb} alt=""/>
+                            <img className="Item__img" src={elt.strMealThumb} alt=""></img>
                         </div>
                         <div className="Item__flex">
                             <div className="Item__leftSide">
-                                <h1  className="Item__color">{elt.strMeal}</h1>
+                                <h1 className="Item__color">{elt.strMeal}</h1>
                                 <p>{elt.strInstructions}</p>
                             </div>
                             <div className="Item__rightSide" >
