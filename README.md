@@ -1,5 +1,5 @@
 # Tasty-Project :shallow_pan_of_food:
-**Tasty wurde 2021 gegründet und bietet jedem ein innovatives, einfaches und leicht zugängliches Konzept, das es dem Browser ermöglicht, mit einem einfachen und schnellen Erlebnis auf den besten gastronomischen Service der Region zuzugreifen.
+***Tasty wurde 2021 gegründet und bietet jedem ein innovatives, einfaches und leicht zugängliches Konzept, das es dem Browser ermöglicht, mit einem einfachen und schnellen Erlebnis auf den besten gastronomischen Service der Region zuzugreifen.
 Mit dem Gedanken, Qualität, niedrigen Preis und ein großartiges Essen anzubieten, ist ein Tasty für alle Zielgruppen geeignet, von Studenten und Universitätsstudenten bis hin zu einer Familie.
 Mit einer Speisekarte voller Optionen für jeden Geschmack garantieren wir unseren Kunden ein einfaches, aber intuitives Online-Menü, mit der Möglichkeit, nach Ihrem Lieblingsgericht, Ihren Lieblingsgetränken oder jedem, der leckere Rezepte probiert, zu stöbern oder direkt zu suchen.
 
