@@ -2,12 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Search.css';
 
-const flexy = {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-}
-
 class SearchItems extends Component {
     constructor(props) {
         super(props);
@@ -33,7 +27,6 @@ class SearchItems extends Component {
                                         <img className="Home__Image" style={{ width: "35%" }} src={elt.strMealThumb} alt=""></img>
                                     </div>
                                 </Link>
-
                             ),
                         }, () => this.setState({ checkSearch: true }));
                     } else {
@@ -46,16 +39,6 @@ class SearchItems extends Component {
     }
 
     render() {
-        let test =
-            this.state.dataIsReady && this.state.data.categories.map(elt =>
-                <Link className="Home__Link" to={`/${elt.strCategory}`} key={elt.idCategory}>
-                    <div key={elt.idCategory}>
-                        <h1 className="Home__Title">{elt.strCategory}</h1>
-                        <img className="Home__Image" src={elt.strCategoryThumb} alt=""></img>
-                    </div>
-                </Link>
-
-            )
         return (
             <>
                 <section >
@@ -66,7 +49,8 @@ class SearchItems extends Component {
                         <input id="valueSearch" type="text" placeholder="Type something to search..." value={this.state.myInput} onChange={this.handleMyInput}></input>
                     </div>
                 </section >
-                {!this.state.checkSearch ? test : this.state.test2}
+                {!this.state.checkSearch ? null : <section className="Flexy_Section">
+                    <div className="Home__Section">{this.state.test2}</div></section>}
             </>
         );
     }

@@ -26,16 +26,18 @@ class Category extends Component {
         return (
             <>
                 <SearchItems />
-                <h2 className="Home__Headline">Or go through our categories</h2>
-                <section className="Home__Section">
-                    {this.state.dataIsReady && this.state.data.categories.map(elt =>
-                        <Link className="Home__Link" to={`/${elt.strCategory}`} key={elt.idCategory}>
-                            <div key={elt.idCategory}>
-                                <h1 className="Home__Title">{elt.strCategory}</h1>
-                                <img className="Home__Image" src={elt.strCategoryThumb} alt=""></img>
-                            </div>
-                        </Link>)}
-                    <Link to="/random">Random</Link>
+                <section className="Flexy_Section">
+                    <h2 className="Home__Headline">Or go through our categories</h2>
+                    <div className="Home__Section">
+                        {this.state.dataIsReady && this.state.data.categories.map(elt =>
+                            <Link className="Home__Link" to={`/${elt.strCategory}`} key={elt.idCategory}>
+                                <div key={elt.idCategory}>
+                                    <h1 className="Home__Title">{elt.strCategory}</h1>
+                                    <img className="Home__Image" src={elt.strCategoryThumb} alt=""></img>
+                                </div>
+                            </Link>)}
+                        <Link className="Home__Link" to="/random"><h1 className="Home__Title">RANDOM</h1></Link>
+                    </div>
                 </section>
             </>
         );
