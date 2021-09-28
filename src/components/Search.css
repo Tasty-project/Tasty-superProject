@@ -3,26 +3,20 @@
 input {
     font-family: 'Belleza', sans-serif;
     width: 210px;
-    padding: 12px;
+    padding: 15px;
     margin: 25px 0;
     border-radius: 10px;
     border: 1px solid #e1fcf4;
-    
+    font-size: 2em;
 }
 
 input:hover {
-    font-family: 'Belleza', sans-serif;
-    padding: 10px;
-    margin: 25px 0 ;
-    border-radius: 10px;
     border: 1px solid #e1fcf4;
     box-shadow: 1px 1px 4px 3px #e1fcf4;
 }
 
 @media (max-width: 700px) {
-    input {
-        margin-left: 5%;
-    }
+  
   }
 
 .search__div {
@@ -33,10 +27,9 @@ input:hover {
 .logo {
     display: flex;
     justify-content: center;
-    margin-top: 5em;
+    margin: 5em 0 3em 0;
+
 }
 @media (max-width: 700px) {
-   .logo {
-        margin-left: 30%;
-    }
+   
   }
