@@ -1,3 +1,17 @@
-footer img {
-    margin: 100px 15px 10px;
+footer {
+  margin: 10vh 0 2vh 0;
+}
+footer div {
+  width: 15vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  transition: 1s;
+}
+footer a:hover {
+  transform: scale(1.5);
+}
+footer h4 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
 }

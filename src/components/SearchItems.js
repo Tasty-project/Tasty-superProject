@@ -47,11 +47,12 @@ class SearchItems extends Component {
                     <Link to="/" className="logo">
                         <img src="../img/logo.svg" alt=""></img>
                     </Link>
+                    <h1>Find a recipe, an idea, an inspiration...</h1>
                     <div className="search__div" >
-                        <input id="valueSearch" type="text" placeholder="Search" value={this.state.myInput} onChange={this.handleMyInput}></input>
+                        <input id="valueSearch" type="text" placeholder="Search" value={this.state.myInput} onChange={this.handleMyInput} ></input>
                     </div>
                 </section >
-                {!this.state.checkSearch ? null : <section className="Flexy_Section">
+                {!this.state.checkSearch ? null : <section className="Flexy_Section" style={{marginTop: "6vh"}}>
                     <div className="Home__Section">{this.state.test2}</div></section>}
             </>
         );

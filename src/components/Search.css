@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
-
 input {
   font-family: "Belleza", sans-serif;
   width: 310px;
@@ -15,6 +14,11 @@ input {
   display: block;
   padding: 6vh 0;
   text-align: center;
+}
+h1 {
+  text-align: center;
+  color: #e1fcf4;
+  font-size: 3em;
 }
 
 input:hover {
