@@ -13,7 +13,7 @@ Dies ist der Text, den ich erstellt habe, um über die Geschichte der Website na
 
 # Developer Team :computer:<br/>
 Fantastic Four <br/>
-:superhero_woman: Chenyan Lin<br/>
+:superhero_woman:  Chenyan Lin<br/>
 :supervillain_man: Uladi Siauko<br/>
 :supervillain_man: Hisham Diab<br/>
 :supervillain_man: Tulio Aguiar<br/>
