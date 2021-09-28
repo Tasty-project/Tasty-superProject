@@ -48,7 +48,7 @@ class SearchItems extends Component {
                         <img src="../img/logo.svg" alt=""></img>
                     </Link>
                     <div className="search__div" >
-                        <input id="valueSearch" type="text" placeholder="Type something to search..." value={this.state.myInput} onChange={this.handleMyInput}></input>
+                        <input id="valueSearch" type="text" placeholder="Search" value={this.state.myInput} onChange={this.handleMyInput}></input>
                     </div>
                 </section >
                 {!this.state.checkSearch ? null : <section className="Flexy_Section">
