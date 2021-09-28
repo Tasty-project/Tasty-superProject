@@ -32,8 +32,10 @@ class TastyItem extends Component {
                         <div className="Item__flex">
                             <div className="Item__leftSide">
                                 <h1 className="Item__color">{elt.strMeal}</h1>
-                                 <p>{elt.strInstructions}</p>
-                                
+                                <ul>
+                                    {elt.strInstructions.split('.').map(elt => <li>{elt + "."}</li>)}
+                                </ul>
+
                             </div>
                             <div className="Item__rightSide">
                                 <h1 className="Item__color"  >Ingredients</h1>
