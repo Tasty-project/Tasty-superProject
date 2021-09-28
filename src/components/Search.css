@@ -32,4 +32,14 @@ input:hover {
 }
 @media (max-width: 700px) {
    
+   .logo {
+        margin-left: 30%;
+    }
   }
+  
+
+  @media (max-width: 375px) {
+    .logo {
+         margin-left: 6%;
+     }
+   }
