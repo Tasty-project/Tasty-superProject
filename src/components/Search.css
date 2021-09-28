@@ -1,45 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
 
 input {
-    font-family: 'Belleza', sans-serif;
-    width: 210px;
-    padding: 15px;
-    margin: 25px 0;
-    border-radius: 10px;
-    border: 1px solid #e1fcf4;
-    font-size: 2em;
+  font-family: "Belleza", sans-serif;
+  width: 310px;
+  padding: 15px;
+  margin: 5vh 0 2vh 0;
+  border-radius: 40px;
+  border: 1px solid #e1fcf4;
+  font-size: 2em;
+  text-align: center;
+  color: #210718;
+}
+.logo {
+  display: block;
+  padding: 6vh 0;
+  text-align: center;
 }
 
 input:hover {
-    border: 1px solid #e1fcf4;
-    box-shadow: 1px 1px 4px 3px #e1fcf4;
+  border: 1px solid #e1fcf4;
+  box-shadow: 1px 1px 4px 3px #e1fcf4;
 }
 
 @media (max-width: 700px) {
-  
-  }
+}
 
 .search__div {
-    text-align: center;
-    /* margin-left: 10%; */
+  text-align: center;
 }
-
-.logo {
-    display: flex;
-    justify-content: center;
-    margin: 5em 0 3em 0;
-
-}
-@media (max-width: 700px) {
-   
-   .logo {
-        margin-left: 30%;
-    }
-  }
-  
-
-  @media (max-width: 375px) {
-    .logo {
-         margin-left: 6%;
-     }
-   }
