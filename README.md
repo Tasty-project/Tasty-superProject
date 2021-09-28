@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+# Tasty-Project :shallow_pan_of_food:
+***Tasty wurde 2021 gegründet und bietet jedem ein innovatives, einfaches und leicht zugängliches Konzept, das es dem Browser ermöglicht, mit einem einfachen und schnellen Erlebnis auf den besten gastronomischen Service der Region zuzugreifen.
+Mit dem Gedanken, Qualität, niedrigen Preis und ein großartiges Essen anzubieten, ist ein Tasty für alle Zielgruppen geeignet, von Studenten und Universitätsstudenten bis hin zu einer Familie.
+Mit einer Speisekarte voller Optionen für jeden Geschmack garantieren wir unseren Kunden ein einfaches, aber intuitives Online-Menü, mit der Möglichkeit, nach Ihrem Lieblingsgericht, Ihren Lieblingsgetränken oder jedem, der leckere Rezepte probiert, zu stöbern oder direkt zu suchen.***
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Unsere Zukunftsplanung entwickelt Verbesserungen unserer Website und Dienstleistungen, wie Optionen für Gerichte anderer Nationalitäten, Filtern nach Produkten, Kommentaren und direkter Interaktion von Benutzern sowie neue Inhalte und Optionen!
+Dies ist der Text, den ich erstellt habe, um über die Geschichte der Website nachzudenken. Helfen Sie mir, wenn Sie ein Wort finden, das durch ein anderes ersetzt werden kann, oder einen Änderungsvorschlag.** <br/>
+***Link to the Presentation <br/>***
+[https://www.canva.com/design/DAEq0cBwwuY/kD0bqpKT9do3YdbZiqRawA/view?utm_content=DAEq0cBwwuY&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton&mode=preview]
 
-## Available Scripts
+***link to Demo Version*** <br/>
+[https://focused-clarke-22ce1f.netlify.app]
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Developer Team :computer:<br/>
+Fantastic Four <br/>
+.Chenyan Lin<br/>
+.Uladi Siauko<br/>
+.Hisham Diab<br/>
+.Tulio Aguiar<br/>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SearchItems from './SearchItems';
 import './TastyItem.css';
 
 class TastyItem extends Component {
@@ -22,6 +23,7 @@ class TastyItem extends Component {
     render() {
         return (
             <>
+                <SearchItems />
                 {this.state.dataIsReady && this.state.data.meals.map(elt =>
                     <section className="Item__section">
 

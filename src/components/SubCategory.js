@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Category.css';
 import '../App.css';
+import SearchItems from './SearchItems';
 
 class SubCategory extends Component {
     constructor(props) {
@@ -25,6 +26,7 @@ class SubCategory extends Component {
     render() {
         return (
             <>
+                <SearchItems />
                 <section className="Flexy_Section">
                     <h2 className="Home__Headline"> Everything {this.props.match.params.strCategory} </h2>
                     <div className="Home__Section">

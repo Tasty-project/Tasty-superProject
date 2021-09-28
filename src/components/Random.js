@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import SearchItems from './SearchItems';
 import './TastyItem.css'
 class Random extends Component {
     constructor(props) {
@@ -17,6 +18,7 @@ class Random extends Component {
     render() {
         return (
             <>
+                <SearchItems />
                 {this.state.dataIsReady && this.state.data.meals.map(elt =>
                     <section className="Item__section">
 
