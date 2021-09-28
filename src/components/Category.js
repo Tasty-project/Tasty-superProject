@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Category.css';
 import SearchItems from './SearchItems';
-import SocialMedia from './SocialMedia';
 
 class Category extends Component {
     constructor(props) {
@@ -37,10 +36,9 @@ class Category extends Component {
                                     <img className="Home__Image" src={elt.strCategoryThumb} alt=""></img>
                                 </div>
                             </Link>)}
-                        <Link className="Home__Link" to="/random">Random</Link>
+                        <Link className="Home__Link" to="/random"><h1 className="Home__Title">RANDOM</h1></Link>
                     </div>
                 </section>
-                <SocialMedia />
             </>
         );
     }

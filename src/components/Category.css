@@ -45,6 +45,8 @@
 .Home__Link {
   display: flex;
   align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @media only screen and (max-width: 1150px) {

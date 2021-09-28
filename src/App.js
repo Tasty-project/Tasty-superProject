@@ -5,7 +5,6 @@ import SubCategory from './components/SubCategory';
 import SocialMedia from './components/SocialMedia';
 import TastyItem from './components/TastyItem';
 import Random from './components/Random'
-import SearchItems from './components/SearchItems';
 import {
   BrowserRouter as Router,
   Switch,
@@ -28,6 +27,7 @@ class App extends Component {
           <Route path="/search/:idMeal" exact component={TastyItem} />
           <Route path="/:strCategory/:idMeal" component={TastyItem} />
         </Switch>
+        <SocialMedia />
       </Router>);
   }
 }

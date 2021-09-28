@@ -63,7 +63,6 @@ class TastyItem extends Component {
                         </div>
                     </section>
                 )}
-
             </>
         );
     }
