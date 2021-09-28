@@ -11,7 +11,7 @@ Dies ist der Text, den ich erstellt habe, um über die Geschichte der Website na
 ***link to Demo Version*** <br/>
 [https://focused-clarke-22ce1f.netlify.app]
 
-# Developer Team<br/>
+# Developer Team :computer:<br/>
 Fantastic Four <br/>
 .Chenyan Lin<br/>
 .Uladi Siauko<br/>
