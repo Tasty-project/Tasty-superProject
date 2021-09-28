@@ -15,3 +15,9 @@ footer h4 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
 }
+
+@media (max-width: 1150px) {
+  footer div {
+    width: 40vw;
+  }
+}
