@@ -4,7 +4,6 @@
 }
 
 .Item__flex {
-  font-size: 1.6em;
   display: flex;
   /* flex-wrap: wrap; */
   justify-content: space-between;
