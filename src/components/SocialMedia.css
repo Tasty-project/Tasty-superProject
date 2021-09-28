@@ -7,8 +7,13 @@ footer div {
   transition: 1s;
 }
 
+<<<<<<< HEAD
 footer > div > a:nth-of-type(2) {
   margin: 0 1.6em;
+=======
+footer > div > a:nth-of-type(2){
+    margin: 0 1.6em;
+>>>>>>> 9f469ce8f9248b12873205d4fa951fa74203e762
 }
 
 footer a:hover {
