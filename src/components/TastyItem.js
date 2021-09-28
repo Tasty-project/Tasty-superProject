@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import SearchItems from './SearchItems';
 import './TastyItem.css';
 
 class TastyItem extends Component {
@@ -23,12 +22,11 @@ class TastyItem extends Component {
     render() {
         return (
             <>
-                <SearchItems />
                 {this.state.dataIsReady && this.state.data.meals.map(elt =>
                     <section className="Item__section">
-                        
-                            <img className="Item__img" src={elt.strMealThumb} alt=""></img>
-                        
+
+                        <img className="Item__img" src={elt.strMealThumb} alt=""></img>
+
                         <div className="Item__flex">
                             <div className="Item__leftSide">
                                 <h1 className="Item__color">{elt.strMeal}</h1>
@@ -36,7 +34,7 @@ class TastyItem extends Component {
                                     {elt.strInstructions.split('.').map(elt => <li>{elt + "."}</li>)}
                                 </ul>
                             </div>
-                            <div className="Item__rightSide">
+                            <div className="Item__rightSide" key={elt.idMeal}>
                                 <h1 className="Item__color"  >Ingredients</h1>
                                 <p>{elt.strMeasure1} {elt.strIngredient1}</p>
                                 <p>{elt.strMeasure2} {elt.strIngredient2}</p>

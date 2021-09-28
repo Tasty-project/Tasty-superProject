@@ -8,6 +8,7 @@ class SearchItems extends Component {
         this.state = {
             searchItem: [],
             checkSearch: false,
+            dataIsReady: true,
             myInput: ""
         }
     }
@@ -18,6 +19,7 @@ class SearchItems extends Component {
             fetch(`https://themealdb.com/api/json/v1/1/search.php?s=${event.target.value}`)
                 .then(response => response.json())
                 .then(json => {
+                    this.setState({ dataIsReady: false })
                     if (json.meals) {
                         this.setState({
                             test2: json.meals.map((elt, i) =>
@@ -52,7 +54,7 @@ class SearchItems extends Component {
                         <input id="valueSearch" type="text" placeholder="Search" value={this.state.myInput} onChange={this.handleMyInput} ></input>
                     </div>
                 </section >
-                {!this.state.checkSearch ? null : <section className="Flexy_Section" style={{marginTop: "6vh"}}>
+                {!this.state.checkSearch && this.state.dataIsReady ? null : <section className="Flexy_Section" style={{ marginTop: "6vh" }}>
                     <div className="Home__Section">{this.state.test2}</div></section>}
             </>
         );

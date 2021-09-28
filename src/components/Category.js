@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Category.css';
-import SearchItems from './SearchItems';
 
 class Category extends Component {
     constructor(props) {
@@ -25,7 +24,6 @@ class Category extends Component {
     render() {
         return (
             <>
-                <SearchItems />
                 <section className="Flexy_Section">
                     <h2 className="Home__Headline">Or go through our categories</h2>
                     <div className="Home__Section">
