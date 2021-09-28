@@ -30,7 +30,7 @@ class SearchItems extends Component {
                             ),
                         }, () => this.setState({ checkSearch: true }));
                     } else {
-                        this.setState({ test2: 'not found' });
+                        this.setState({ test2: <h1 className="Home__Title" style={{ color: "#fff" }} >Not found</h1> });
                     }
                 })
         } else {
@@ -39,6 +39,8 @@ class SearchItems extends Component {
     }
 
     render() {
+
+
         return (
             <>
                 <section >
