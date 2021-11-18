@@ -1,6 +1,6 @@
 # Silentmoon-Project :lotus_position: :
 ***Gestresst :rage1: ?<br/> 
-Rückenschmerzen:bowing_man : ?<br/>
+Rückenschmerzen :bowing_man: ?<br/>
 Brauchst du ein bisschen time out :lotus_position_man: ?***
 
 # Ziel der APP :
