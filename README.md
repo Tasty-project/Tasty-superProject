@@ -1,12 +1,12 @@
-# Silentmoon-Project :
+# Silentmoon-Project :lotus_position: :
 ***Gestresst? 
 Rückenschmerzen?
-Brauchst du ein bisschen time out?
+Brauchst du ein bisschen time out?***
 
 # Ziel der APP :
-Der Nutzer soll in der App eine Auswahl an verschiedene Kategorien angeboten bekommen zum geistigem Training oder zur Entspannung.
-Ob durch Audio-Guide geführte Meditationen, eine Playlist mit meditativen Musikstücken oder auch körperliche Übungen zur Entspannung - nur Gutes für die Seele! 
-***
+***Der Nutzer soll in der App eine Auswahl an verschiedene Kategorien angeboten bekommen zum geistigem Training oder zur Entspannung.
+Ob durch Audio-Guide geführte Meditationen, eine Playlist mit meditativen Musikstücken oder auch körperliche Übungen zur Entspannung - nur Gutes für die Seele!***
+
 
 **Unsere Zukunftsplanung entwickelt Verbesserungen unserer Website und Dienstleistungen ** <br/>
 
