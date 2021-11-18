@@ -1,7 +1,7 @@
 # Silentmoon-Project :lotus_position: :
-***Gestresst:rage1:?<br/> 
-Rückenschmerzen:bowing_man:?<br/>
-Brauchst du ein bisschen time out:lotus_position_man:?***
+***Gestresst :rage1: ?<br/> 
+Rückenschmerzen:bowing_man : ?<br/>
+Brauchst du ein bisschen time out :lotus_position_man: ?***
 
 # Ziel der APP :
 ***Der Nutzer soll in der App eine Auswahl an verschiedene Kategorien angeboten bekommen zum geistigem Training oder zur Entspannung.
