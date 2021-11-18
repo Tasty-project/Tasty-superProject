@@ -8,7 +8,7 @@ Brauchst du ein bisschen time out?***
 Ob durch Audio-Guide geführte Meditationen, eine Playlist mit meditativen Musikstücken oder auch körperliche Übungen zur Entspannung - nur Gutes für die Seele!***
 
 
-**Unsere Zukunftsplanung entwickelt Verbesserungen unserer Website und Dienstleistungen ** <br/>
+**Unsere Zukunftsplanung entwickelt Verbesserungen unserer Website und Dienstleistungen** <br/>
 
 # Developer Team :computer:<br/>
 
